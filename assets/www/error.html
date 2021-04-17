@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>fadeOut demo</title>
+
+<style>
+		h1 {
+			font-size: 4.0em; 
+			font-weight: normal;
+			text-align: center;
+			color: #4e0e00;
+			font-family:error
+		}
+		
+		.content {
+			font-size: 2.0em; 
+			font-weight: normal;
+			text-align: center;
+			color: #052360;
+			font-family:content
+		}
+		
+		@font-face{
+				font-family:error;
+				src: url(error-font.ttf);
+			}
+		@font-face{	
+			font-family:content;
+				src: url(content.ttf);
+			}
+</style>
+
+<script src="error.js"></script>
+</head>
+<body background="images/bg.jpg">
+
+	<div class="fade1">
+		<h1> Error In Connection </h1> 
+	</div>
+
+	
+
+	<div class="fade3"> 
+		<p class="content"> <br> Please make sure that you are Connected to the Network of the module and then try again. </p> 
+	</div>
+
+
+<script>
+    $(".fade1").hide(0).delay(500).fadeIn(3000)
+	$(".fade2").hide(0).delay(1000).fadeIn(3000)
+	$(".fade3").hide(0).delay(1500).fadeIn(3000)
+</script>
+</html>
